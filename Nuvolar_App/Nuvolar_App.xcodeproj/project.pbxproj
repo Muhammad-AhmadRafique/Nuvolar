@@ -1,0 +1,1059 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE176C5628CF1A1D00FCA1DC /* UserHistoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE176C5528CF1A1D00FCA1DC /* UserHistoryModel.m */; };
+		DE269A3328C1D6420042A7B8 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = DE269A3228C1D6420042A7B8 /* UIView+Category.m */; };
+		DE269A3C28C1D77E0042A7B8 /* UITableView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = DE269A3B28C1D77E0042A7B8 /* UITableView+Category.m */; };
+		DE269A4228C1D9810042A7B8 /* UserHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = DE269A4128C1D9810042A7B8 /* UserHistory.m */; };
+		DE269A4728C1DEE80042A7B8 /* HistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE269A4528C1DEE80042A7B8 /* HistoryTableViewCell.m */; };
+		DE269A4828C1DEE80042A7B8 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE269A4628C1DEE80042A7B8 /* HistoryTableViewCell.xib */; };
+		DE9E1B8828BE177D00D80EBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9E1B8728BE177D00D80EBD /* AppDelegate.m */; };
+		DE9E1B8B28BE177D00D80EBD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9E1B8A28BE177D00D80EBD /* SceneDelegate.m */; };
+		DE9E1B8E28BE177D00D80EBD /* UsersListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9E1B8D28BE177D00D80EBD /* UsersListViewController.m */; };
+		DE9E1B9128BE177D00D80EBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE9E1B8F28BE177D00D80EBD /* Main.storyboard */; };
+		DE9E1B9428BE177D00D80EBD /* Nuvolar_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE9E1B9228BE177D00D80EBD /* Nuvolar_App.xcdatamodeld */; };
+		DE9E1B9628BE177F00D80EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE9E1B9528BE177F00D80EBD /* Assets.xcassets */; };
+		DE9E1B9928BE177F00D80EBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE9E1B9728BE177F00D80EBD /* LaunchScreen.storyboard */; };
+		DE9E1B9C28BE177F00D80EBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9E1B9B28BE177F00D80EBD /* main.m */; };
+		DE9E1BA628BE177F00D80EBD /* Nuvolar_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9E1BA528BE177F00D80EBD /* Nuvolar_AppTests.m */; };
+		DE9E1BB028BE177F00D80EBD /* Nuvolar_AppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9E1BAF28BE177F00D80EBD /* Nuvolar_AppUITests.m */; };
+		DE9E1BB228BE177F00D80EBD /* Nuvolar_AppUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9E1BB128BE177F00D80EBD /* Nuvolar_AppUITestsLaunchTests.m */; };
+		DE9E1BC628BE19A700D80EBD /* UsersListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9E1BC428BE19A700D80EBD /* UsersListTableViewCell.m */; };
+		DE9E1BC728BE19A700D80EBD /* UsersListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE9E1BC528BE19A700D80EBD /* UsersListTableViewCell.xib */; };
+		DE9E1BCE28BE241200D80EBD /* CircularView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9E1BCD28BE241200D80EBD /* CircularView.m */; };
+		DE9E1BD328BE2F4000D80EBD /* GenericFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9E1BD128BE2F4000D80EBD /* GenericFetcher.m */; };
+		DE9E1BD928BE2F6A00D80EBD /* AbstractObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9E1BD628BE2F6A00D80EBD /* AbstractObject.m */; };
+		DE9E1BDA28BE2F6A00D80EBD /* AbstractFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9E1BD828BE2F6A00D80EBD /* AbstractFetcher.m */; };
+		DE9E1BF228BE2FA000D80EBD /* URLBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9E1BEA28BE2FA000D80EBD /* URLBuilder.m */; };
+		DE9E1BF628BE30DB00D80EBD /* AsyncURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9E1BF428BE30DB00D80EBD /* AsyncURLConnection.m */; };
+		DE9E1C0028BE439F00D80EBD /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9E1BFF28BE439F00D80EBD /* UserModel.m */; };
+		DE9E1C0428BE442800D80EBD /* JsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9E1C0328BE442800D80EBD /* JsonParser.m */; };
+		DEDCE9B228BF334D002DB60C /* ImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDCE9B128BF334D002DB60C /* ImageCache.m */; };
+		DEDCE9B628BF3A75002DB60C /* UserDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDCE9B528BF3A75002DB60C /* UserDetailsViewController.m */; };
+		DEDCE9BA28BF3FDA002DB60C /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDCE9B928BF3FDA002DB60C /* Router.m */; };
+		DEDCE9BE28BF4499002DB60C /* FollowersView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDCE9BD28BF4499002DB60C /* FollowersView.m */; };
+		DEDCE9C228BF44B8002DB60C /* RepositoriesView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDCE9C128BF44B8002DB60C /* RepositoriesView.m */; };
+		DEDCE9C828BF4BC6002DB60C /* FollowersTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDCE9C628BF4BC6002DB60C /* FollowersTableViewCell.m */; };
+		DEDCE9C928BF4BC6002DB60C /* FollowersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDCE9C728BF4BC6002DB60C /* FollowersTableViewCell.xib */; };
+		DEDCE9CF28BF738B002DB60C /* RepositoriesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDCE9CD28BF738B002DB60C /* RepositoriesCollectionViewCell.m */; };
+		DEDCE9D028BF738B002DB60C /* RepositoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDCE9CE28BF738B002DB60C /* RepositoriesCollectionViewCell.xib */; };
+		DEDCE9D628BF8EEC002DB60C /* RepoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDCE9D528BF8EEC002DB60C /* RepoModel.m */; };
+		DEDCE9DE28BF9AC2002DB60C /* UserDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDCE9DD28BF9AC2002DB60C /* UserDetailModel.m */; };
+		DEF9868028C0BFAD00BB8331 /* SearchUsersListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF9867E28C0BFAD00BB8331 /* SearchUsersListTableViewCell.m */; };
+		DEF9868128C0BFAD00BB8331 /* SearchUsersListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEF9867F28C0BFAD00BB8331 /* SearchUsersListTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE9E1BA228BE177F00D80EBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE9E1B7B28BE177D00D80EBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE9E1B8228BE177D00D80EBD;
+			remoteInfo = Nuvolar_App;
+		};
+		DE9E1BAC28BE177F00D80EBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE9E1B7B28BE177D00D80EBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE9E1B8228BE177D00D80EBD;
+			remoteInfo = Nuvolar_App;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DE176C5528CF1A1D00FCA1DC /* UserHistoryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserHistoryModel.m; sourceTree = "<group>"; };
+		DE176C5728CF1A2D00FCA1DC /* UserHistoryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserHistoryModel.h; sourceTree = "<group>"; };
+		DE269A3128C1D6420042A7B8 /* UIView+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		DE269A3228C1D6420042A7B8 /* UIView+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
+		DE269A3A28C1D77E0042A7B8 /* UITableView+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+Category.h"; sourceTree = "<group>"; };
+		DE269A3B28C1D77E0042A7B8 /* UITableView+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Category.m"; sourceTree = "<group>"; };
+		DE269A4028C1D9810042A7B8 /* UserHistory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserHistory.h; sourceTree = "<group>"; };
+		DE269A4128C1D9810042A7B8 /* UserHistory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserHistory.m; sourceTree = "<group>"; };
+		DE269A4428C1DEE80042A7B8 /* HistoryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewCell.h; sourceTree = "<group>"; };
+		DE269A4528C1DEE80042A7B8 /* HistoryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewCell.m; sourceTree = "<group>"; };
+		DE269A4628C1DEE80042A7B8 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		DE269A4B28C1EBCD0042A7B8 /* Enums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Enums.h; sourceTree = "<group>"; };
+		DE9E1B8328BE177D00D80EBD /* Nuvolar_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nuvolar_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE9E1B8628BE177D00D80EBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DE9E1B8728BE177D00D80EBD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DE9E1B8928BE177D00D80EBD /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		DE9E1B8A28BE177D00D80EBD /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		DE9E1B8C28BE177D00D80EBD /* UsersListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsersListViewController.h; sourceTree = "<group>"; };
+		DE9E1B8D28BE177D00D80EBD /* UsersListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsersListViewController.m; sourceTree = "<group>"; };
+		DE9E1B9028BE177D00D80EBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE9E1B9328BE177D00D80EBD /* Nuvolar_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nuvolar_App.xcdatamodel; sourceTree = "<group>"; };
+		DE9E1B9528BE177F00D80EBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE9E1B9828BE177F00D80EBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE9E1B9A28BE177F00D80EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE9E1B9B28BE177F00D80EBD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DE9E1BA128BE177F00D80EBD /* Nuvolar_AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Nuvolar_AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE9E1BA528BE177F00D80EBD /* Nuvolar_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nuvolar_AppTests.m; sourceTree = "<group>"; };
+		DE9E1BAB28BE177F00D80EBD /* Nuvolar_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Nuvolar_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE9E1BAF28BE177F00D80EBD /* Nuvolar_AppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nuvolar_AppUITests.m; sourceTree = "<group>"; };
+		DE9E1BB128BE177F00D80EBD /* Nuvolar_AppUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nuvolar_AppUITestsLaunchTests.m; sourceTree = "<group>"; };
+		DE9E1BC328BE19A700D80EBD /* UsersListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsersListTableViewCell.h; sourceTree = "<group>"; };
+		DE9E1BC428BE19A700D80EBD /* UsersListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsersListTableViewCell.m; sourceTree = "<group>"; };
+		DE9E1BC528BE19A700D80EBD /* UsersListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersListTableViewCell.xib; sourceTree = "<group>"; };
+		DE9E1BCC28BE241200D80EBD /* CircularView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularView.h; sourceTree = "<group>"; };
+		DE9E1BCD28BE241200D80EBD /* CircularView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircularView.m; sourceTree = "<group>"; };
+		DE9E1BD128BE2F4000D80EBD /* GenericFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericFetcher.m; sourceTree = "<group>"; };
+		DE9E1BD228BE2F4000D80EBD /* GenericFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericFetcher.h; sourceTree = "<group>"; };
+		DE9E1BD528BE2F6A00D80EBD /* AbstractObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractObject.h; sourceTree = "<group>"; };
+		DE9E1BD628BE2F6A00D80EBD /* AbstractObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractObject.m; sourceTree = "<group>"; };
+		DE9E1BD728BE2F6A00D80EBD /* AbstractFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractFetcher.h; sourceTree = "<group>"; };
+		DE9E1BD828BE2F6A00D80EBD /* AbstractFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractFetcher.m; sourceTree = "<group>"; };
+		DE9E1BEA28BE2FA000D80EBD /* URLBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLBuilder.m; sourceTree = "<group>"; };
+		DE9E1BEB28BE2FA000D80EBD /* URLBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLBuilder.h; sourceTree = "<group>"; };
+		DE9E1BF428BE30DB00D80EBD /* AsyncURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncURLConnection.m; sourceTree = "<group>"; };
+		DE9E1BF528BE30DB00D80EBD /* AsyncURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncURLConnection.h; sourceTree = "<group>"; };
+		DE9E1BFC28BE319F00D80EBD /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		DE9E1BFE28BE439F00D80EBD /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		DE9E1BFF28BE439F00D80EBD /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		DE9E1C0228BE442800D80EBD /* JsonParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonParser.h; sourceTree = "<group>"; };
+		DE9E1C0328BE442800D80EBD /* JsonParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonParser.m; sourceTree = "<group>"; };
+		DEDCE9B028BF334D002DB60C /* ImageCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCache.h; sourceTree = "<group>"; };
+		DEDCE9B128BF334D002DB60C /* ImageCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCache.m; sourceTree = "<group>"; };
+		DEDCE9B428BF3A75002DB60C /* UserDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDetailsViewController.h; sourceTree = "<group>"; };
+		DEDCE9B528BF3A75002DB60C /* UserDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDetailsViewController.m; sourceTree = "<group>"; };
+		DEDCE9B828BF3FDA002DB60C /* Router.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
+		DEDCE9B928BF3FDA002DB60C /* Router.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Router.m; sourceTree = "<group>"; };
+		DEDCE9BC28BF4499002DB60C /* FollowersView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FollowersView.h; sourceTree = "<group>"; };
+		DEDCE9BD28BF4499002DB60C /* FollowersView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FollowersView.m; sourceTree = "<group>"; };
+		DEDCE9C028BF44B8002DB60C /* RepositoriesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoriesView.h; sourceTree = "<group>"; };
+		DEDCE9C128BF44B8002DB60C /* RepositoriesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RepositoriesView.m; sourceTree = "<group>"; };
+		DEDCE9C528BF4BC6002DB60C /* FollowersTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FollowersTableViewCell.h; sourceTree = "<group>"; };
+		DEDCE9C628BF4BC6002DB60C /* FollowersTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FollowersTableViewCell.m; sourceTree = "<group>"; };
+		DEDCE9C728BF4BC6002DB60C /* FollowersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowersTableViewCell.xib; sourceTree = "<group>"; };
+		DEDCE9CC28BF738B002DB60C /* RepositoriesCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoriesCollectionViewCell.h; sourceTree = "<group>"; };
+		DEDCE9CD28BF738B002DB60C /* RepositoriesCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RepositoriesCollectionViewCell.m; sourceTree = "<group>"; };
+		DEDCE9CE28BF738B002DB60C /* RepositoriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoriesCollectionViewCell.xib; sourceTree = "<group>"; };
+		DEDCE9D428BF8EEC002DB60C /* RepoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepoModel.h; sourceTree = "<group>"; };
+		DEDCE9D528BF8EEC002DB60C /* RepoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RepoModel.m; sourceTree = "<group>"; };
+		DEDCE9DC28BF9AC2002DB60C /* UserDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDetailModel.h; sourceTree = "<group>"; };
+		DEDCE9DD28BF9AC2002DB60C /* UserDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDetailModel.m; sourceTree = "<group>"; };
+		DEF9867D28C0BFAD00BB8331 /* SearchUsersListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchUsersListTableViewCell.h; sourceTree = "<group>"; };
+		DEF9867E28C0BFAD00BB8331 /* SearchUsersListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchUsersListTableViewCell.m; sourceTree = "<group>"; };
+		DEF9867F28C0BFAD00BB8331 /* SearchUsersListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchUsersListTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE9E1B8028BE177D00D80EBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE9E1B9E28BE177F00D80EBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE9E1BA828BE177F00D80EBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6645DE2228C2832D00234E62 /* App Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE9E1B9228BE177D00D80EBD /* Nuvolar_App.xcdatamodeld */,
+				DE9E1B8628BE177D00D80EBD /* AppDelegate.h */,
+				DE9E1B8728BE177D00D80EBD /* AppDelegate.m */,
+				DE9E1B8928BE177D00D80EBD /* SceneDelegate.h */,
+				DE9E1B8A28BE177D00D80EBD /* SceneDelegate.m */,
+				DE9E1B9B28BE177F00D80EBD /* main.m */,
+			);
+			path = "App Files";
+			sourceTree = "<group>";
+		};
+		66B6970628C1406700E9F63F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DE269A3128C1D6420042A7B8 /* UIView+Category.h */,
+				DE269A3228C1D6420042A7B8 /* UIView+Category.m */,
+				DE269A3A28C1D77E0042A7B8 /* UITableView+Category.h */,
+				DE269A3B28C1D77E0042A7B8 /* UITableView+Category.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		DE176C5428CF19B200FCA1DC /* UserHistoryModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE176C5728CF1A2D00FCA1DC /* UserHistoryModel.h */,
+				DE176C5528CF1A1D00FCA1DC /* UserHistoryModel.m */,
+			);
+			path = UserHistoryModel;
+			sourceTree = "<group>";
+		};
+		DE269A3D28C1D7E50042A7B8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				DEDCE9B828BF3FDA002DB60C /* Router.h */,
+				DEDCE9B928BF3FDA002DB60C /* Router.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		DE269A3E28C1D9520042A7B8 /* UserHistory */ = {
+			isa = PBXGroup;
+			children = (
+				DE269A4028C1D9810042A7B8 /* UserHistory.h */,
+				DE269A4128C1D9810042A7B8 /* UserHistory.m */,
+			);
+			path = UserHistory;
+			sourceTree = "<group>";
+		};
+		DE269A4328C1DED30042A7B8 /* HistoryTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE269A4428C1DEE80042A7B8 /* HistoryTableViewCell.h */,
+				DE269A4528C1DEE80042A7B8 /* HistoryTableViewCell.m */,
+				DE269A4628C1DEE80042A7B8 /* HistoryTableViewCell.xib */,
+			);
+			path = HistoryTableViewCell;
+			sourceTree = "<group>";
+		};
+		DE9E1B7A28BE177D00D80EBD = {
+			isa = PBXGroup;
+			children = (
+				DE9E1B8528BE177D00D80EBD /* Nuvolar_App */,
+				DE9E1BA428BE177F00D80EBD /* Nuvolar_AppTests */,
+				DE9E1BAE28BE177F00D80EBD /* Nuvolar_AppUITests */,
+				DE9E1B8428BE177D00D80EBD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE9E1B8428BE177D00D80EBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE9E1B8328BE177D00D80EBD /* Nuvolar_App.app */,
+				DE9E1BA128BE177F00D80EBD /* Nuvolar_AppTests.xctest */,
+				DE9E1BAB28BE177F00D80EBD /* Nuvolar_AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE9E1B8528BE177D00D80EBD /* Nuvolar_App */ = {
+			isa = PBXGroup;
+			children = (
+				DE9E1BFD28BE438300D80EBD /* Models */,
+				DE9E1BFB28BE319400D80EBD /* Utilities */,
+				DE9E1BC128BE198700D80EBD /* Views */,
+				DE9E1BC028BE18CF00D80EBD /* Resources */,
+				DE9E1BBE28BE18AC00D80EBD /* ViewControllers */,
+				6645DE2228C2832D00234E62 /* App Files */,
+			);
+			path = Nuvolar_App;
+			sourceTree = "<group>";
+		};
+		DE9E1BA428BE177F00D80EBD /* Nuvolar_AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE9E1BA528BE177F00D80EBD /* Nuvolar_AppTests.m */,
+			);
+			path = Nuvolar_AppTests;
+			sourceTree = "<group>";
+		};
+		DE9E1BAE28BE177F00D80EBD /* Nuvolar_AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DE9E1BAF28BE177F00D80EBD /* Nuvolar_AppUITests.m */,
+				DE9E1BB128BE177F00D80EBD /* Nuvolar_AppUITestsLaunchTests.m */,
+			);
+			path = Nuvolar_AppUITests;
+			sourceTree = "<group>";
+		};
+		DE9E1BBE28BE18AC00D80EBD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DEDCE9B728BF3A7D002DB60C /* UsersListViewController */,
+				DEDCE9B328BF3A5F002DB60C /* UserDetailsViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DE9E1BBF28BE18C100D80EBD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DE9E1B8F28BE177D00D80EBD /* Main.storyboard */,
+				DE9E1B9728BE177F00D80EBD /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DE9E1BC028BE18CF00D80EBD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE9E1B9528BE177F00D80EBD /* Assets.xcassets */,
+				DE9E1B9A28BE177F00D80EBD /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DE9E1BC128BE198700D80EBD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE9E1BC828BE19CA00D80EBD /* Custom Views */,
+				DE9E1BBF28BE18C100D80EBD /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE9E1BC228BE198F00D80EBD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DE269A4328C1DED30042A7B8 /* HistoryTableViewCell */,
+				DEF9868228C0BFB700BB8331 /* UsersListTableViewCell */,
+				DEF9867C28C0BF9700BB8331 /* SearchUsersListTableViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DE9E1BC828BE19CA00D80EBD /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE9E1BCC28BE241200D80EBD /* CircularView.h */,
+				DE9E1BCD28BE241200D80EBD /* CircularView.m */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		DE9E1BCF28BE2EFB00D80EBD /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				DE9E1C0128BE441500D80EBD /* JsonParser */,
+				DE9E1BF328BE30DB00D80EBD /* ASyncURLConnection */,
+				DE9E1BE928BE2FA000D80EBD /* URLBuilder */,
+				DE9E1BD428BE2F5400D80EBD /* AbstractFetcher */,
+				DE9E1BD028BE2F1400D80EBD /* GenericFetcher */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		DE9E1BD028BE2F1400D80EBD /* GenericFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				DE9E1BD228BE2F4000D80EBD /* GenericFetcher.h */,
+				DE9E1BD128BE2F4000D80EBD /* GenericFetcher.m */,
+			);
+			path = GenericFetcher;
+			sourceTree = "<group>";
+		};
+		DE9E1BD428BE2F5400D80EBD /* AbstractFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				DE9E1BD728BE2F6A00D80EBD /* AbstractFetcher.h */,
+				DE9E1BD828BE2F6A00D80EBD /* AbstractFetcher.m */,
+				DE9E1BD528BE2F6A00D80EBD /* AbstractObject.h */,
+				DE9E1BD628BE2F6A00D80EBD /* AbstractObject.m */,
+			);
+			path = AbstractFetcher;
+			sourceTree = "<group>";
+		};
+		DE9E1BE928BE2FA000D80EBD /* URLBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				DE9E1BEA28BE2FA000D80EBD /* URLBuilder.m */,
+				DE9E1BEB28BE2FA000D80EBD /* URLBuilder.h */,
+			);
+			path = URLBuilder;
+			sourceTree = "<group>";
+		};
+		DE9E1BF328BE30DB00D80EBD /* ASyncURLConnection */ = {
+			isa = PBXGroup;
+			children = (
+				DE9E1BF428BE30DB00D80EBD /* AsyncURLConnection.m */,
+				DE9E1BF528BE30DB00D80EBD /* AsyncURLConnection.h */,
+			);
+			path = ASyncURLConnection;
+			sourceTree = "<group>";
+		};
+		DE9E1BFB28BE319400D80EBD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DE269A3E28C1D9520042A7B8 /* UserHistory */,
+				DE269A3D28C1D7E50042A7B8 /* Router */,
+				66B6970628C1406700E9F63F /* Categories */,
+				DE9E1BCF28BE2EFB00D80EBD /* Network Layer */,
+				DEDCE9AF28BF3332002DB60C /* ImageCache */,
+				DE9E1BFC28BE319F00D80EBD /* Constants.h */,
+				DE269A4B28C1EBCD0042A7B8 /* Enums.h */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DE9E1BFD28BE438300D80EBD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE176C5428CF19B200FCA1DC /* UserHistoryModel */,
+				DEDCE9DB28BF9AB3002DB60C /* UserDetailModel */,
+				DEDCE9D228BF8ECD002DB60C /* RepoModel */,
+				DEDCE9D128BF8EC6002DB60C /* UserModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DE9E1C0128BE441500D80EBD /* JsonParser */ = {
+			isa = PBXGroup;
+			children = (
+				DE9E1C0228BE442800D80EBD /* JsonParser.h */,
+				DE9E1C0328BE442800D80EBD /* JsonParser.m */,
+			);
+			path = JsonParser;
+			sourceTree = "<group>";
+		};
+		DEDCE9AF28BF3332002DB60C /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				DEDCE9B028BF334D002DB60C /* ImageCache.h */,
+				DEDCE9B128BF334D002DB60C /* ImageCache.m */,
+			);
+			path = ImageCache;
+			sourceTree = "<group>";
+		};
+		DEDCE9B328BF3A5F002DB60C /* UserDetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DEDCE9BB28BF4483002DB60C /* Views */,
+				DEDCE9B428BF3A75002DB60C /* UserDetailsViewController.h */,
+				DEDCE9B528BF3A75002DB60C /* UserDetailsViewController.m */,
+			);
+			path = UserDetailsViewController;
+			sourceTree = "<group>";
+		};
+		DEDCE9B728BF3A7D002DB60C /* UsersListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DE9E1BC228BE198F00D80EBD /* Cells */,
+				DE9E1B8C28BE177D00D80EBD /* UsersListViewController.h */,
+				DE9E1B8D28BE177D00D80EBD /* UsersListViewController.m */,
+			);
+			path = UsersListViewController;
+			sourceTree = "<group>";
+		};
+		DEDCE9BB28BF4483002DB60C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEDCE9C328BF4BA0002DB60C /* FollowersView */,
+				DEDCE9BF28BF449F002DB60C /* RepositoriesView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEDCE9BF28BF449F002DB60C /* RepositoriesView */ = {
+			isa = PBXGroup;
+			children = (
+				DEDCE9CA28BF7373002DB60C /* Cells */,
+				DEDCE9C028BF44B8002DB60C /* RepositoriesView.h */,
+				DEDCE9C128BF44B8002DB60C /* RepositoriesView.m */,
+			);
+			path = RepositoriesView;
+			sourceTree = "<group>";
+		};
+		DEDCE9C328BF4BA0002DB60C /* FollowersView */ = {
+			isa = PBXGroup;
+			children = (
+				DEDCE9C428BF4BB1002DB60C /* cells */,
+				DEDCE9BC28BF4499002DB60C /* FollowersView.h */,
+				DEDCE9BD28BF4499002DB60C /* FollowersView.m */,
+			);
+			path = FollowersView;
+			sourceTree = "<group>";
+		};
+		DEDCE9C428BF4BB1002DB60C /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				DEDCE9C528BF4BC6002DB60C /* FollowersTableViewCell.h */,
+				DEDCE9C628BF4BC6002DB60C /* FollowersTableViewCell.m */,
+				DEDCE9C728BF4BC6002DB60C /* FollowersTableViewCell.xib */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		DEDCE9CA28BF7373002DB60C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DEDCE9CC28BF738B002DB60C /* RepositoriesCollectionViewCell.h */,
+				DEDCE9CD28BF738B002DB60C /* RepositoriesCollectionViewCell.m */,
+				DEDCE9CE28BF738B002DB60C /* RepositoriesCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DEDCE9D128BF8EC6002DB60C /* UserModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE9E1BFE28BE439F00D80EBD /* UserModel.h */,
+				DE9E1BFF28BE439F00D80EBD /* UserModel.m */,
+			);
+			path = UserModel;
+			sourceTree = "<group>";
+		};
+		DEDCE9D228BF8ECD002DB60C /* RepoModel */ = {
+			isa = PBXGroup;
+			children = (
+				DEDCE9D428BF8EEC002DB60C /* RepoModel.h */,
+				DEDCE9D528BF8EEC002DB60C /* RepoModel.m */,
+			);
+			path = RepoModel;
+			sourceTree = "<group>";
+		};
+		DEDCE9DB28BF9AB3002DB60C /* UserDetailModel */ = {
+			isa = PBXGroup;
+			children = (
+				DEDCE9DC28BF9AC2002DB60C /* UserDetailModel.h */,
+				DEDCE9DD28BF9AC2002DB60C /* UserDetailModel.m */,
+			);
+			path = UserDetailModel;
+			sourceTree = "<group>";
+		};
+		DEF9867C28C0BF9700BB8331 /* SearchUsersListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DEF9867D28C0BFAD00BB8331 /* SearchUsersListTableViewCell.h */,
+				DEF9867E28C0BFAD00BB8331 /* SearchUsersListTableViewCell.m */,
+				DEF9867F28C0BFAD00BB8331 /* SearchUsersListTableViewCell.xib */,
+			);
+			path = SearchUsersListTableViewCell;
+			sourceTree = "<group>";
+		};
+		DEF9868228C0BFB700BB8331 /* UsersListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE9E1BC328BE19A700D80EBD /* UsersListTableViewCell.h */,
+				DE9E1BC428BE19A700D80EBD /* UsersListTableViewCell.m */,
+				DE9E1BC528BE19A700D80EBD /* UsersListTableViewCell.xib */,
+			);
+			path = UsersListTableViewCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE9E1B8228BE177D00D80EBD /* Nuvolar_App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE9E1BB528BE177F00D80EBD /* Build configuration list for PBXNativeTarget "Nuvolar_App" */;
+			buildPhases = (
+				DE9E1B7F28BE177D00D80EBD /* Sources */,
+				DE9E1B8028BE177D00D80EBD /* Frameworks */,
+				DE9E1B8128BE177D00D80EBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nuvolar_App;
+			productName = Nuvolar_App;
+			productReference = DE9E1B8328BE177D00D80EBD /* Nuvolar_App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE9E1BA028BE177F00D80EBD /* Nuvolar_AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE9E1BB828BE177F00D80EBD /* Build configuration list for PBXNativeTarget "Nuvolar_AppTests" */;
+			buildPhases = (
+				DE9E1B9D28BE177F00D80EBD /* Sources */,
+				DE9E1B9E28BE177F00D80EBD /* Frameworks */,
+				DE9E1B9F28BE177F00D80EBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE9E1BA328BE177F00D80EBD /* PBXTargetDependency */,
+			);
+			name = Nuvolar_AppTests;
+			productName = Nuvolar_AppTests;
+			productReference = DE9E1BA128BE177F00D80EBD /* Nuvolar_AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DE9E1BAA28BE177F00D80EBD /* Nuvolar_AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE9E1BBB28BE177F00D80EBD /* Build configuration list for PBXNativeTarget "Nuvolar_AppUITests" */;
+			buildPhases = (
+				DE9E1BA728BE177F00D80EBD /* Sources */,
+				DE9E1BA828BE177F00D80EBD /* Frameworks */,
+				DE9E1BA928BE177F00D80EBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE9E1BAD28BE177F00D80EBD /* PBXTargetDependency */,
+			);
+			name = Nuvolar_AppUITests;
+			productName = Nuvolar_AppUITests;
+			productReference = DE9E1BAB28BE177F00D80EBD /* Nuvolar_AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE9E1B7B28BE177D00D80EBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					DE9E1B8228BE177D00D80EBD = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					DE9E1BA028BE177F00D80EBD = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = DE9E1B8228BE177D00D80EBD;
+					};
+					DE9E1BAA28BE177F00D80EBD = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = DE9E1B8228BE177D00D80EBD;
+					};
+				};
+			};
+			buildConfigurationList = DE9E1B7E28BE177D00D80EBD /* Build configuration list for PBXProject "Nuvolar_App" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE9E1B7A28BE177D00D80EBD;
+			productRefGroup = DE9E1B8428BE177D00D80EBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE9E1B8228BE177D00D80EBD /* Nuvolar_App */,
+				DE9E1BA028BE177F00D80EBD /* Nuvolar_AppTests */,
+				DE9E1BAA28BE177F00D80EBD /* Nuvolar_AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE9E1B8128BE177D00D80EBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE9E1BC728BE19A700D80EBD /* UsersListTableViewCell.xib in Resources */,
+				DE9E1B9928BE177F00D80EBD /* LaunchScreen.storyboard in Resources */,
+				DE9E1B9628BE177F00D80EBD /* Assets.xcassets in Resources */,
+				DE9E1B9128BE177D00D80EBD /* Main.storyboard in Resources */,
+				DEF9868128C0BFAD00BB8331 /* SearchUsersListTableViewCell.xib in Resources */,
+				DEDCE9D028BF738B002DB60C /* RepositoriesCollectionViewCell.xib in Resources */,
+				DE269A4828C1DEE80042A7B8 /* HistoryTableViewCell.xib in Resources */,
+				DEDCE9C928BF4BC6002DB60C /* FollowersTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE9E1B9F28BE177F00D80EBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE9E1BA928BE177F00D80EBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE9E1B7F28BE177D00D80EBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE9E1BCE28BE241200D80EBD /* CircularView.m in Sources */,
+				DE9E1BF228BE2FA000D80EBD /* URLBuilder.m in Sources */,
+				DE9E1C0028BE439F00D80EBD /* UserModel.m in Sources */,
+				DEDCE9BE28BF4499002DB60C /* FollowersView.m in Sources */,
+				DE9E1BF628BE30DB00D80EBD /* AsyncURLConnection.m in Sources */,
+				DE269A4728C1DEE80042A7B8 /* HistoryTableViewCell.m in Sources */,
+				DE269A3C28C1D77E0042A7B8 /* UITableView+Category.m in Sources */,
+				DE9E1BDA28BE2F6A00D80EBD /* AbstractFetcher.m in Sources */,
+				DEDCE9CF28BF738B002DB60C /* RepositoriesCollectionViewCell.m in Sources */,
+				DE9E1BD328BE2F4000D80EBD /* GenericFetcher.m in Sources */,
+				DEDCE9C828BF4BC6002DB60C /* FollowersTableViewCell.m in Sources */,
+				DEF9868028C0BFAD00BB8331 /* SearchUsersListTableViewCell.m in Sources */,
+				DE9E1B9C28BE177F00D80EBD /* main.m in Sources */,
+				DE176C5628CF1A1D00FCA1DC /* UserHistoryModel.m in Sources */,
+				DEDCE9B628BF3A75002DB60C /* UserDetailsViewController.m in Sources */,
+				DE9E1B8E28BE177D00D80EBD /* UsersListViewController.m in Sources */,
+				DE9E1B8828BE177D00D80EBD /* AppDelegate.m in Sources */,
+				DE9E1B8B28BE177D00D80EBD /* SceneDelegate.m in Sources */,
+				DEDCE9DE28BF9AC2002DB60C /* UserDetailModel.m in Sources */,
+				DE9E1BC628BE19A700D80EBD /* UsersListTableViewCell.m in Sources */,
+				DE269A3328C1D6420042A7B8 /* UIView+Category.m in Sources */,
+				DE9E1C0428BE442800D80EBD /* JsonParser.m in Sources */,
+				DE269A4228C1D9810042A7B8 /* UserHistory.m in Sources */,
+				DE9E1B9428BE177D00D80EBD /* Nuvolar_App.xcdatamodeld in Sources */,
+				DEDCE9D628BF8EEC002DB60C /* RepoModel.m in Sources */,
+				DEDCE9C228BF44B8002DB60C /* RepositoriesView.m in Sources */,
+				DEDCE9B228BF334D002DB60C /* ImageCache.m in Sources */,
+				DEDCE9BA28BF3FDA002DB60C /* Router.m in Sources */,
+				DE9E1BD928BE2F6A00D80EBD /* AbstractObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE9E1B9D28BE177F00D80EBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE9E1BA628BE177F00D80EBD /* Nuvolar_AppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE9E1BA728BE177F00D80EBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE9E1BB228BE177F00D80EBD /* Nuvolar_AppUITestsLaunchTests.m in Sources */,
+				DE9E1BB028BE177F00D80EBD /* Nuvolar_AppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE9E1BA328BE177F00D80EBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE9E1B8228BE177D00D80EBD /* Nuvolar_App */;
+			targetProxy = DE9E1BA228BE177F00D80EBD /* PBXContainerItemProxy */;
+		};
+		DE9E1BAD28BE177F00D80EBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE9E1B8228BE177D00D80EBD /* Nuvolar_App */;
+			targetProxy = DE9E1BAC28BE177F00D80EBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE9E1B8F28BE177D00D80EBD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE9E1B9028BE177D00D80EBD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE9E1B9728BE177F00D80EBD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE9E1B9828BE177F00D80EBD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE9E1BB328BE177F00D80EBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DE9E1BB428BE177F00D80EBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE9E1BB628BE177F00D80EBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y6C4LF6P3K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nuvolar_App/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nuvolar.Nuvolar-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE9E1BB728BE177F00D80EBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y6C4LF6P3K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nuvolar_App/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nuvolar.Nuvolar-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DE9E1BB928BE177F00D80EBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QFRSV3LUHQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nuvolar-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nuvolar_App.app/Nuvolar_App";
+			};
+			name = Debug;
+		};
+		DE9E1BBA28BE177F00D80EBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QFRSV3LUHQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nuvolar-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nuvolar_App.app/Nuvolar_App";
+			};
+			name = Release;
+		};
+		DE9E1BBC28BE177F00D80EBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QFRSV3LUHQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nuvolar-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nuvolar_App;
+			};
+			name = Debug;
+		};
+		DE9E1BBD28BE177F00D80EBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QFRSV3LUHQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nuvolar-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nuvolar_App;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE9E1B7E28BE177D00D80EBD /* Build configuration list for PBXProject "Nuvolar_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE9E1BB328BE177F00D80EBD /* Debug */,
+				DE9E1BB428BE177F00D80EBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE9E1BB528BE177F00D80EBD /* Build configuration list for PBXNativeTarget "Nuvolar_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE9E1BB628BE177F00D80EBD /* Debug */,
+				DE9E1BB728BE177F00D80EBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE9E1BB828BE177F00D80EBD /* Build configuration list for PBXNativeTarget "Nuvolar_AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE9E1BB928BE177F00D80EBD /* Debug */,
+				DE9E1BBA28BE177F00D80EBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE9E1BBB28BE177F00D80EBD /* Build configuration list for PBXNativeTarget "Nuvolar_AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE9E1BBC28BE177F00D80EBD /* Debug */,
+				DE9E1BBD28BE177F00D80EBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DE9E1B9228BE177D00D80EBD /* Nuvolar_App.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DE9E1B9328BE177D00D80EBD /* Nuvolar_App.xcdatamodel */,
+			);
+			currentVersion = DE9E1B9328BE177D00D80EBD /* Nuvolar_App.xcdatamodel */;
+			path = Nuvolar_App.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DE9E1B7B28BE177D00D80EBD /* Project object */;
+}
